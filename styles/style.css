@@ -16,6 +16,7 @@
     --secondary-text-color: #787885;
     --footer-bg-color: #0a0826;
     --body-bg-color: #ffffff;
+    --border-color: #e2e8ee;
 }
 body{
     background-color: var(--body-bg-color);
@@ -119,3 +120,27 @@ body{
     transform: scale(0.5);
 }
 /* =======================HEADER SECITON END HERE======================= */
+
+/* =======================SPONSORED SECITON START HERE======================= */
+.sponsored-section{
+    width: 1000px;
+    height: 100px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    margin:  4rem auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all 0.2s ease;
+}
+.sponsored-section img{
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+}
+.sponsored-section img:hover{
+    filter: grayscale(0);
+}
+
+/* =======================SPONSORED SECITON END HERE======================= */
