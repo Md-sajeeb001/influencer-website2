@@ -22,4 +22,29 @@ body{
     background-color: var(--body-bg-color);
 }
 /* =======================HEADER SECITON START HERE======================= */
-
+.header-section{
+    max-width: 1440px;
+    height: 700px;
+}
+.navber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 8%;
+}
+.navber h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-text-color);
+}
+.navber ul{
+    display: flex;
+}
+.navber ul li{
+    margin-left: 1.8rem;
+}
+.navber ul li a{
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--dark-text-color);
+}
