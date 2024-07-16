@@ -50,7 +50,7 @@ body{
     color: var(--dark-text-color);
 }
 .header-container-section{
-    max-width: 1140px;
+    width: 84%;
     height: 500px;
     margin: 2rem auto;
     display: flex;
@@ -143,6 +143,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     margin: 3rem auto;
+    cursor: pointer;
 }
 .product-item{
     width: 320px;
@@ -366,7 +367,7 @@ body{
     }
     .product-carts .text-btn{
         width: 30%;
-        left: 15rem;
+        left: 13rem;
     }
     .footer-section{
         width: 100%;
