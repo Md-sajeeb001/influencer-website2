@@ -121,6 +121,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 2rem auto;
+    cursor: pointer;
 }
 /* =======================SPONSORED SECITON END HERE======================= */
 
@@ -191,7 +192,51 @@ body{
     line-height: 1.6rem;
     margin-top: .4rem;
 }
+.text-btn{
+    color: var(--btn-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+    width: 40%;
+    height: 5%;
+    left: 58rem;
+    bottom: -1rem;
+}
+.text-btn i{
+    margin-left: .5rem;
+}
 /* =======================PRODUCT SECITON END HERE======================= */
+
+/* ======================FEATURD SECTION START HERE============================ */
+.featured-section{
+    max-width: 1040px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+.featured-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+.featured-content h2{
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--dark-text-color);
+    margin-bottom: 1rem;
+}
+.featured-content p{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-text-color);
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+#btn-extra-design{
+    border-radius: 0;
+}
+/* ======================FEATURD SECTION END HERE============================ */
 
 /* ======================MEDIA QUARY SECTION START HERE============================ */
 
@@ -253,6 +298,23 @@ body{
     .product-cart-section{
         margin-top: 2.5rem;
     }
+    .featured-section img{
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    .featured-section{
+        flex-direction: column-reverse;
+        margin-top: 22rem;
+        padding: 1rem;
+        gap: 3rem;
+    }
+    .featured-content{
+        text-align: center;
+    }
+    .product-carts .text-btn{
+        width: 30%;
+        left: 15rem;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width: 992px) {
@@ -310,11 +372,30 @@ body{
     .product-carts{
         grid-template-columns: repeat(2, 1fr);
         margin: 3rem auto;
+        padding: 0 3rem;
     }
     .product-cart-section{
         margin-top: 1.5rem;
     }
     .product-carts{
-        row-gap: 2rem;
+        row-gap: 1rem;
+    }
+    .featured-section img{
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    .featured-section{
+        flex-direction: column-reverse;
+        margin-top: 36rem;
+        padding: 4rem;
+        gap: 3rem;
+    }
+    .featured-content{
+        text-align: center;
+    }
+    .product-carts .text-btn{
+        width: 50%;
+        left: -3rem;
+        bottom: -31rem;
     }
 }
