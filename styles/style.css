@@ -197,9 +197,9 @@ body{
     font-size: 1.1rem;
     font-weight: 600;
     position: relative;
-    width: 40%;
-    height: 5%;
-    left: 58rem;
+    width: 8rem;
+    height: 2rem;
+    left: 56rem;
     bottom: -1rem;
 }
 .text-btn i{
@@ -236,6 +236,60 @@ body{
 #btn-extra-design{
     border-radius: 0;
 }
+/* ======================FEATURD SECTION END HERE============================ */
+/* ======================FOOTER SECTION START HERE============================ */
+
+.footer-section{
+    max-width: 1440px;
+    height: 300px;
+    background-color: var(--footer-bg-color);
+    margin-top: 8rem;
+    color: var(--text-color);
+}
+.footer-contact{
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    text-align: center;
+    border: 1px solid #ff0000;
+}
+.footer-contact h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.footer-contact p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--border-color);
+    margin: 1rem 0;
+    line-height: 1.6rem;
+}
+.footer-contact ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-contact ul li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--border-color);
+}
+.footer-contact ul li a{
+    color: var(--footer-bg-color);
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+.footer-contact ul li a:hover{
+    color: var(--btn-color);
+    transform: rotate(360deg);
+}
+
 /* ======================FEATURD SECTION END HERE============================ */
 
 /* ======================MEDIA QUARY SECTION START HERE============================ */
@@ -314,6 +368,12 @@ body{
     .product-carts .text-btn{
         width: 30%;
         left: 15rem;
+    }
+    .footer-section{
+        width: 100%;
+    }
+    .footer-contact{
+        width: 100%;
     }
 }
 
@@ -397,5 +457,92 @@ body{
         width: 50%;
         left: -3rem;
         bottom: -31rem;
+    }
+    .footer-contact{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .header-section{
+        width: 100%;
+        padding: 3rem 1rem;
+    }
+    .navber{
+        padding: 2rem 1rem;
+    }
+    .navber ul li{
+        margin-left: 1.8rem;
+    }
+    .navber ul li{
+        margin-left: 2rem;
+    }
+    .header-container-section{
+        width: 100%;
+        margin-top: -3rem;
+    }
+    .image-container{
+        width: 310px;
+        height: 310px;  
+        margin-right: 2rem;
+    }
+    #show-img{
+        width: 300px;
+        height: 300px;
+        margin-left: 1rem;
+        margin-top: .5rem; 
+    }
+    .header-content{
+        width: 80%;
+        padding: 1.2rem;
+        margin-top: 1rem;
+    }
+    .header-content h1{
+        font-size: 1.7rem; 
+    }
+    .sponsored-section{
+        width: 90%;
+        margin-top: -4rem;
+    }
+    .sponsored-img{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .sponsored-img img{
+        width: 9%;
+    }
+    .product-carts{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3rem auto;
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+    .product-cart-section{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .product-carts{
+        row-gap: 1rem;
+    }
+    .featured-section img{
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    .featured-section{
+        padding-right: 2rem;
+        gap: 3rem;
+    }
+    .featured-content h2{
+        font-size: 1.8rem;
+    }
+    .text-btn{
+        width: 30%;
+        left: 17rem;
+        bottom: -2rem;
+    }
+    .footer-contact, 
+    .footer-section{
+        width: 100%;
     }
 }
