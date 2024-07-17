@@ -93,7 +93,7 @@ body{
 .image-container{
     width: 480px;
     height: 480px;
-    background: url('/assets/images/Circle\ design.svg');
+    background: url('./assets/images/Circle\ design.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
